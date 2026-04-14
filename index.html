@@ -1934,7 +1934,9 @@
     <p>Neuroventa Comunitaria · Fundación Alemana de Servicios<br>Material elaborado por Maria Alejandra Urdaneta – Neuro Wellness Learning · Todos los derechos reservados.</p>
     <img src="https://raw.githubusercontent.com/urdanetamariale-Neurowellness/neuroventacomunitaria/main/logo%20fas.jpg" alt="FAS" style="height:36px; width:auto; display:block;">
   </footer>
+
 </div><!-- end page-m1 -->
+
 <!-- ══════════════════════════════════════════ MODULE 2 PAGE -->
 <div id="page-m2" class="page">
 
@@ -2052,17 +2054,6 @@
         </div>
       </div>
 
-      <div class="material-card" style="margin-top:16px;">
-        <div class="material-icon">📖</div>
-        <div class="material-info">
-          <h4>El cerebro de tu socio no es tu enemigo</h4>
-          <p>Lectura de profundización: camino corto, fuerzas placer-dolor y triángulo de confianza aplicados al trabajo con socios de cajas de ahorro. Con herramientas prácticas de aplicación inmediata.</p>
-          <a href="https://drive.google.com/file/d/1IFSbc_E2VUmiJWpxBoDxzGdwM1b42-jK/view" class="material-link" target="_blank">
-            Descargar lectura PDF →
-          </a>
-        </div>
-      </div>
-
       <div style="background:var(--navy-light); border-left:3px solid var(--navy); padding:20px 24px; margin-top:24px;">
         <div style="font-size:11px; font-weight:500; letter-spacing:1.5px; text-transform:uppercase; color:var(--navy); margin-bottom:8px;">Mientras lees, pregúntate:</div>
         <div style="display:flex; flex-direction:column; gap:8px;">
@@ -2087,9 +2078,11 @@
       <p style="font-size:15px; color:var(--mid); margin-bottom:28px; line-height:1.7; max-width:600px;">Grabación completa de la sesión del 15 de abril.</p>
 
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/Sl9Hjkm67Sg?origin=https://urdanetamariale-neurowellness.github.io"
+        <iframe src="https://www.youtube.com/embed/Sl9Hjkm67Sg?si=NcZgD55tH2bfwMJR"
           title="Módulo 2 · La Conversación que Abre Decisiones"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen>
         </iframe>
       </div>
@@ -2108,11 +2101,22 @@
         </div>
       </div>
 
+      <div class="material-card" style="margin-bottom:24px;">
+        <div class="material-icon">📖</div>
+        <div class="material-info">
+          <h4>El cerebro de tu socio no es tu enemigo</h4>
+          <p>Lectura de profundización: camino corto, fuerzas placer-dolor y triángulo de confianza aplicados al trabajo con socios de cajas de ahorro. Con herramientas prácticas de aplicación inmediata.</p>
+          <a href="https://drive.google.com/file/d/1IFSbc_E2VUmiJWpxBoDxzGdwM1b42-jK/view" class="material-link" target="_blank">
+            Descargar lectura de profundización →
+          </a>
+        </div>
+      </div>
+
       <div class="task-instructions">
         <h4>Qué vas a hacer</h4>
         <div class="task-step">
           <div class="task-step-num">1</div>
-          <p><strong>Lee el material de profundización</strong> si aún no lo has hecho. Especialmente la sección de herramientas prácticas.</p>
+          <p><strong>Lee el material de profundización</strong> de arriba si aún no lo has hecho. Especialmente la sección de herramientas prácticas.</p>
         </div>
         <div class="task-step">
           <div class="task-step-num">2</div>
@@ -2204,7 +2208,7 @@
   // ── CONTRASEÑA DEL PROGRAMA ──────────────────────────────────────────────
   // Para cambiar la contraseña: reemplaza el valor entre comillas con
   // btoa('tu_nueva_contraseña') generado en la consola del navegador
-  // La contraseña actual es: neuroventa2025
+  // La contraseña actual es: neuroventa2026
   const PROGRAM_PASS = btoa('neuroventa2026');
   const SESSION_KEY  = 'nvc_auth';
 
@@ -2353,6 +2357,8 @@
     el.style.display = 'block';
     el.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
+
+  function showError(msg) {
     const el = document.getElementById('form-error');
     el.textContent = msg;
     el.style.display = 'block';
